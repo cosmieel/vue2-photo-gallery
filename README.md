@@ -1,19 +1,35 @@
-# vue_init
+# Vue2 Photo Gallery
 
-## Project setup
+#### _App page: [vue2-photo-gallery](https://vue2-photo-gallery.netlify.app/)_
+
+SPA photo-gallery (Vue2, Vuex)
+
+#### Project setup
+
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
+
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
+
 ```
 yarn build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Run your unit tests
+
+```
+yarn test:unit
+```
+
+#### Lints and fixes files
+
+```
+yarn lint
+```
