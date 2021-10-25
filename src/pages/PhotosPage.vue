@@ -1,6 +1,9 @@
 <template>
   <v-container>
-    <PhotoForm v-if="photos.length < 11" @addPhotoToList="addPhotoToList" />
+    <PhotoForm
+      v-if="$store.getters.getAllPhotos.length < 15"
+      @addPhotoToList="addPhotoToList"
+    />
     <div v-else>Вы не можете добавить больше фотографий</div>
     <v-row>
       <Photo
@@ -25,9 +28,6 @@ export default {
     PhotoForm,
     PhotoDialog,
   },
-  data: () => ({
-    photos: [],
-  }),
   mounted() {
     this.fetchPhotos();
   },
